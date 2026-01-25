@@ -95,39 +95,20 @@
       max-width: 860px;
     }
 
-    /* Job */
-    .job{ margin-top: 10px; }
-
-    .job-head{
-      display:flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 12px;
-      margin-bottom: 10px;
-    }
-
-    .job-title{
-      font-weight: 800;
-      font-size: 12.5px;
-      text-transform: uppercase;
-      letter-spacing: .2px;
-    }
-
     ul.bullets{
       margin: 0 0 14px 18px;
       padding: 0;
       font-size: 12.5px;
-      line-height: 1.7;            /* small upgrade */
+      line-height: 1.7;
     }
-    ul.bullets li{ margin: 5px 0; } /* small upgrade */
+    ul.bullets li{ margin: 5px 0; }
 
     /* Bottom columns */
-    .grid-3{
+    .grid-2{
       display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 26px;                   /* small upgrade */
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
       margin-top: 18px;
-      align-items:start;
     }
 
     .mini-title{
@@ -146,43 +127,41 @@
     .edu-school{ font-weight: 700; }
     .edu-degree{ color: var(--muted); }
 
-    .skills-list, .awards-list{
+    .skills-list{
       margin: 0 0 0 18px;
       padding: 0;
       font-size: 12.5px;
-      line-height: 1.7;            /* small upgrade */
+      line-height: 1.7;
     }
-    .skills-list li, .awards-list li{ margin: 5px 0; }
+    .skills-list li{ margin: 5px 0; }
 
-    /* Print */
     @media print{
       .actions{ display:none; }
       .page{ margin:0; max-width:none; padding: 0 18px 0; }
       a{ color:inherit; text-decoration:none; }
     }
 
-    /* Mobile */
     @media (max-width: 780px){
-      .grid-3{ grid-template-columns: 1fr; }
+      .grid-2{ grid-template-columns: 1fr; }
     }
   </style>
 </head>
 
 <body>
   <div class="page">
+
     <!-- HEADER -->
     <div class="name">Mar Vincent Oraiz</div>
 
     <div class="contact">
       Valenzuela, Philippines &nbsp;|&nbsp;
       <a href="tel:+639913128973">+63 991 312 8973</a> &nbsp;|&nbsp;
-      <a href="mailto:gt.kanekikun@gmail.com">gt.kanekikun@gmail.com</a>
-      <br />
-      <a href="https://v2.onlinejobs.ph/jobseekers/info/4607015" target="_blank" rel="noopener">OnlineJobs.ph</a>
+      <a href="mailto:gt.kanekikun@gmail.com">gt.kanekikun@gmail.com</a><br />
+      <a href="https://v2.onlinejobs.ph/jobseekers/info/4607015" target="_blank">OnlineJobs.ph</a>
       &nbsp;|&nbsp;
-      <a href="https://www.upwork.com/freelancers/~011fe614b5771e0510" target="_blank" rel="noopener">Upwork</a>
+      <a href="https://www.upwork.com/freelancers/~011fe614b5771e0510" target="_blank">Upwork</a>
       &nbsp;|&nbsp;
-      Discord: <span style="color:#111;font-weight:700;">vincrnt1us</span>
+      Discord: <b>vincrnt1us</b>
     </div>
 
     <div class="actions">
@@ -201,30 +180,45 @@
       </p>
     </section>
 
-    <!-- WORK EXPERIENCE -->
+    <!-- E-COMMERCE VA SKILLS -->
     <section class="section">
-      <h2 class="section-title">Work Experience</h2>
-
-      <div class="job">
-        <div class="job-head">
-          <div class="job-title">E-commerce Virtual Assistant • Multi-Platform Listing Support</div>
-        </div>
-
-        <ul class="bullets">
-          <li><b>Product Listing & Management:</b> Create and manage product listings on Amazon, eBay, Poshmark, and other platforms, ensuring titles, descriptions, images, and pricing are accurate and appealing.</li>
-          <li><b>SEO & Visibility:</b> Optimize listings with relevant keywords to improve search ranking and help products get found faster.</li>
-          <li><b>Product Research:</b> Identify high-demand and profitable products by analyzing trends, competitors, and customer preferences.</li>
-          <li><b>Order Fulfillment & Inventory:</b> Process orders, track shipments, and keep inventory organized to ensure smooth operations.</li>
-          <li><b>Data Entry & Organization:</b> Maintain accurate product information, sales data, and customer details with consistent updates.</li>
-          <li><b>Multi-Platform Support:</b> Manage listings across Amazon, eBay, Poshmark, Etsy, and Shopify while keeping quality and consistency across stores.</li>
-          <li><b>Detail-Oriented & Reliable:</b> Pay attention to small details that impact customer trust, conversions, and store performance.</li>
-        </ul>
-      </div>
+      <h2 class="section-title">E-Commerce VA Skills</h2>
+      <ul class="bullets">
+        <li><b>Product Listing & Management:</b> Create and manage product listings on Amazon, eBay, Poshmark, and other platforms.</li>
+        <li><b>SEO & Visibility:</b> Optimize listings with relevant keywords to improve discoverability.</li>
+        <li><b>Product Research:</b> Analyze demand, competition, and pricing to identify profitable products.</li>
+        <li><b>Order Fulfillment & Inventory:</b> Process orders, track shipments, and maintain organized inventory.</li>
+        <li><b>Data Entry & Organization:</b> Keep product data, sales records, and customer information accurate.</li>
+        <li><b>Multi-Platform Support:</b> Ensure consistency across Amazon, eBay, Poshmark, Etsy, and Shopify.</li>
+        <li><b>Detail-Oriented & Reliable:</b> Focus on accuracy and quality to support store growth.</li>
+      </ul>
     </section>
 
-    <!-- BOTTOM ROW -->
+    <!-- PROJECTS -->
     <section class="section">
-      <div class="grid-3">
+      <h2 class="section-title">Projects</h2>
+      <ul class="bullets">
+        <li>
+          <b>Mock Product Research Project (Amazon & eBay)</b> — Used to validate product opportunities by checking demand,
+          competition, fees, and profitability.<br />
+          <a href="https://docs.google.com/spreadsheets/d/14uFHkVsBOWpjIMtY5Yt6OVuuG_7IM045ZdkhRF4kO7k/edit?usp=drive_link" target="_blank">
+            View project
+          </a>
+        </li>
+
+        <li>
+          <b>Mock Shopify Demo Store (From Scratch)</b> — Built a demo store to practice product setup, layout,
+          and basic Shopify admin workflows.<br />
+          <a href="https://drive.google.com/file/d/1dfr4cvKoIz8fnogFwq4kqS8CU6_wGKSW/view?usp=sharing" target="_blank">
+            View project
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- EDUCATION + SKILLS -->
+    <section class="section">
+      <div class="grid-2">
         <div>
           <h3 class="mini-title">Education</h3>
           <p class="edu-item">
@@ -236,24 +230,16 @@
         <div>
           <h3 class="mini-title">Skills</h3>
           <ul class="skills-list">
-            <li>Product listing (Amazon, eBay, Poshmark, Etsy, Shopify)</li>
-            <li>Listing SEO (keywords, titles, descriptions)</li>
-            <li>Product research (trends, competitor checks)</li>
-            <li>Order processing & shipment tracking</li>
-            <li>Inventory tracking & organization</li>
-            <li>Data entry & spreadsheet organization</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="mini-title">Awards/Recognition</h3>
-          <ul class="awards-list">
-            <li>Certificates (optional)</li>
-            <li>Achievements (optional)</li>
+            <li>Amazon, eBay, Shopify, Etsy, Poshmark</li>
+            <li>Listing SEO & keyword placement</li>
+            <li>Product research & validation</li>
+            <li>Order processing & inventory tracking</li>
+            <li>Google Sheets & data organization</li>
           </ul>
         </div>
       </div>
     </section>
+
   </div>
 </body>
 </html>
