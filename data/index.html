@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — CV</title>
+  <title>Mar Vincent Oraiz — CV</title>
   <style>
     :root{
       --ink:#111;
@@ -19,14 +19,12 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    /* Page width like a resume */
     .page{
       max-width: 900px;
       margin: 28px auto;
       padding: 0 22px 34px;
     }
 
-    /* Header */
     .name{
       text-align:center;
       font-weight: 800;
@@ -44,6 +42,13 @@
       margin-bottom: 12px;
     }
 
+    .contact a{
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .contact a:hover{ border-bottom-color: var(--muted); }
+
     .rule{
       height:2px;
       background:var(--rule);
@@ -51,10 +56,7 @@
       margin: 10px 0 18px;
     }
 
-    /* Sections */
-    .section{
-      margin-top: 14px;
-    }
+    .section{ margin-top: 14px; }
 
     .section-title{
       font-weight: 800;
@@ -66,15 +68,11 @@
 
     .summary{
       font-size: 12px;
-      color: var(--ink);
       line-height: 1.55;
       margin: 0;
     }
 
-    /* Experience blocks */
-    .job{
-      margin-top: 10px;
-    }
+    .job{ margin-top: 10px; }
 
     .job-head{
       display:flex;
@@ -96,12 +94,6 @@
       text-transform: uppercase;
     }
 
-    .job-sub{
-      font-size: 11px;
-      color: var(--muted);
-      margin: 0 0 6px;
-    }
-
     ul.bullets{
       margin: 0 0 10px 18px;
       padding: 0;
@@ -110,7 +102,6 @@
     }
     ul.bullets li{ margin: 3px 0; }
 
-    /* Bottom 3 columns */
     .grid-3{
       display:grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -123,12 +114,6 @@
       font-size: 12px;
       text-transform: uppercase;
       margin: 0 0 8px;
-    }
-
-    .mini{
-      font-size: 12px;
-      line-height: 1.55;
-      margin: 0;
     }
 
     .edu-row{
@@ -148,13 +133,11 @@
     }
     .skills-list li, .awards-list li{ margin: 3px 0; }
 
-    /* Print-friendly */
     @media print{
       .page{ margin:0; max-width:none; }
       a{ color:inherit; text-decoration:none; }
     }
 
-    /* Small screens */
     @media (max-width: 720px){
       .job-head{ flex-direction: column; align-items:flex-start; }
       .grid-3{ grid-template-columns: 1fr; }
@@ -165,9 +148,9 @@
 <body>
   <div class="page">
     <!-- HEADER -->
-    <div class="name">YOUR NAME HERE</div>
+    <div class="name">Mar Vincent Oraiz</div>
     <div class="contact">
-      Your Home Address &nbsp;|&nbsp; Your Phone Number &nbsp;|&nbsp; Your Email
+      <a href="mailto:gt.kanekikun@gmail.com">gt.kanekikun@gmail.com</a>
     </div>
     <div class="rule"></div>
 
@@ -175,9 +158,9 @@
     <section class="section">
       <h2 class="section-title">Summary</h2>
       <p class="summary">
-        Write 2–4 short lines about you. Keep it simple. Example: Entry-level E-commerce VA focused on Amazon
-        wholesale/FBA product research, profitability checks, and clean admin support. Detail-oriented, organized,
-        and a fast learner.
+        Entry-level E-commerce VA with hands-on experience creating and managing product listings across
+        Amazon, eBay, Poshmark, Etsy, and Shopify. Detail-oriented and reliable, focused on clean product data,
+        strong listing SEO, and smooth order and inventory support.
       </p>
     </section>
 
@@ -187,40 +170,18 @@
 
       <div class="job">
         <div class="job-head">
-          <div class="job-title">Title • Place of Employment</div>
+          <div class="job-title">E-commerce Virtual Assistant • Multi-Platform Listing Support</div>
           <div class="job-dates">Dates of employment</div>
         </div>
-        <p class="job-sub">Optional 1-line context (tools, niche, team, etc.)</p>
-        <ul class="bullets">
-          <li>Bullet achievement or responsibility.</li>
-          <li>Bullet achievement or responsibility.</li>
-          <li>Bullet achievement or responsibility.</li>
-        </ul>
-      </div>
 
-      <div class="job">
-        <div class="job-head">
-          <div class="job-title">Title • Place of Employment</div>
-          <div class="job-dates">Dates of employment</div>
-        </div>
-        <p class="job-sub">Optional 1-line context (tools, niche, team, etc.)</p>
         <ul class="bullets">
-          <li>Bullet achievement or responsibility.</li>
-          <li>Bullet achievement or responsibility.</li>
-          <li>Bullet achievement or responsibility.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-head">
-          <div class="job-title">Title • Place of Employment</div>
-          <div class="job-dates">Dates of employment</div>
-        </div>
-        <p class="job-sub">Optional 1-line context (tools, niche, team, etc.)</p>
-        <ul class="bullets">
-          <li>Bullet achievement or responsibility.</li>
-          <li>Bullet achievement or responsibility.</li>
-          <li>Bullet achievement or responsibility.</li>
+          <li><b>Product Listing & Management:</b> Create and manage product listings on Amazon, eBay, Poshmark, and other platforms, ensuring titles, descriptions, images, and pricing are accurate and appealing.</li>
+          <li><b>SEO & Visibility:</b> Optimize listings with relevant keywords to improve search ranking and help products get found faster.</li>
+          <li><b>Product Research:</b> Identify high-demand and profitable products by analyzing trends, competitors, and customer preferences.</li>
+          <li><b>Order Fulfillment & Inventory:</b> Process orders, track shipments, and keep inventory organized to ensure smooth operations.</li>
+          <li><b>Data Entry & Organization:</b> Maintain accurate product information, sales data, and customer details with consistent updates.</li>
+          <li><b>Multi-Platform Support:</b> Manage listings across Amazon, eBay, Poshmark, Etsy, and Shopify while keeping quality and consistency across stores.</li>
+          <li><b>Detail-Oriented & Reliable:</b> Pay attention to small details that impact customer trust, conversions, and store performance.</li>
         </ul>
       </div>
     </section>
@@ -230,27 +191,27 @@
       <div class="grid-3">
         <div>
           <h3 class="mini-title">Education</h3>
-          <div class="edu-row"><span>Degree</span><span>Year</span></div>
-          <div class="edu-row"><span>School</span><span>Year</span></div>
-          <div class="edu-row"><span>Course / Certificate</span><span>Year</span></div>
+          <div class="edu-row"><span>Your degree / track</span><span>Year</span></div>
+          <div class="edu-row"><span>Your school</span><span>Year</span></div>
         </div>
 
         <div>
           <h3 class="mini-title">Skills</h3>
           <ul class="skills-list">
-            <li>List your technical skills here</li>
-            <li>List your soft skills here</li>
-            <li>List your tools here (Keepa, Helium 10, Sheets)</li>
-            <li>Short bullet points</li>
+            <li>Product listing (Amazon, eBay, Poshmark, Etsy, Shopify)</li>
+            <li>Listing SEO (keywords, titles, descriptions)</li>
+            <li>Product research (trends, competitor checks)</li>
+            <li>Order processing & shipment tracking</li>
+            <li>Inventory tracking & organization</li>
+            <li>Data entry & spreadsheet organization</li>
           </ul>
         </div>
 
         <div>
           <h3 class="mini-title">Awards/Recognition</h3>
           <ul class="awards-list">
-            <li>List your awards</li>
-            <li>Or certifications</li>
-            <li>Or achievements</li>
+            <li>Certificates (optional)</li>
+            <li>Achievements (optional)</li>
           </ul>
         </div>
       </div>
