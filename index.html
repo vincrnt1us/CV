@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mar Vincent Oraiz — CV</title>
+
   <style>
     :root{
       --ink:#111;
@@ -20,16 +21,17 @@
     }
 
     .page{
-      max-width: 900px;
+      max-width: 920px;
       margin: 28px auto;
-      padding: 0 22px 34px;
+      padding: 0 22px 36px;
     }
 
+    /* Header */
     .name{
       text-align:center;
       font-weight: 800;
-      letter-spacing: .8px;
-      font-size: 28px;
+      letter-spacing: .9px;
+      font-size: 30px;
       margin-top: 18px;
       margin-bottom: 6px;
       text-transform: uppercase;
@@ -39,7 +41,8 @@
       text-align:center;
       font-size: 12px;
       color: var(--muted);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+      line-height: 1.55;
     }
 
     .contact a{
@@ -49,6 +52,24 @@
     }
     .contact a:hover{ border-bottom-color: var(--muted); }
 
+    .actions{
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      margin: 10px 0 14px;
+    }
+
+    .btn{
+      border:1px solid #111;
+      background:#fff;
+      color:#111;
+      padding:8px 12px;
+      font-size:12px;
+      cursor:pointer;
+      border-radius:999px;
+    }
+    .btn:hover{ background:#f6f6f6; }
+
     .rule{
       height:2px;
       background:var(--rule);
@@ -56,22 +77,25 @@
       margin: 10px 0 18px;
     }
 
-    .section{ margin-top: 14px; }
+    /* Sections */
+    .section{ margin-top: 16px; }
 
     .section-title{
       font-weight: 800;
       font-size: 13px;
       text-transform: uppercase;
-      letter-spacing: .6px;
-      margin: 0 0 8px;
+      letter-spacing: .7px;
+      margin: 0 0 10px;
     }
 
     .summary{
-      font-size: 12px;
-      line-height: 1.55;
+      font-size: 12.5px;
+      line-height: 1.7;
       margin: 0;
+      max-width: 860px;
     }
 
+    /* Job */
     .job{ margin-top: 10px; }
 
     .job-head{
@@ -79,67 +103,66 @@
       justify-content: space-between;
       align-items: baseline;
       gap: 12px;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
 
     .job-title{
       font-weight: 800;
-      font-size: 12px;
+      font-size: 12.5px;
       text-transform: uppercase;
-    }
-
-    .job-dates{
-      font-size: 11px;
-      color: var(--muted);
-      text-transform: uppercase;
+      letter-spacing: .2px;
     }
 
     ul.bullets{
-      margin: 0 0 10px 18px;
+      margin: 0 0 14px 18px;
       padding: 0;
-      font-size: 12px;
-      line-height: 1.55;
+      font-size: 12.5px;
+      line-height: 1.7;            /* small upgrade */
     }
-    ul.bullets li{ margin: 3px 0; }
+    ul.bullets li{ margin: 5px 0; } /* small upgrade */
 
+    /* Bottom columns */
     .grid-3{
       display:grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 22px;
-      margin-top: 16px;
+      gap: 26px;                   /* small upgrade */
+      margin-top: 18px;
+      align-items:start;
     }
 
     .mini-title{
       font-weight: 800;
-      font-size: 12px;
+      font-size: 12.5px;
       text-transform: uppercase;
-      margin: 0 0 8px;
+      letter-spacing: .4px;
+      margin: 0 0 10px;
     }
 
-    .edu-row{
-      display:flex;
-      justify-content: space-between;
-      gap: 10px;
-      font-size: 12px;
-      margin: 6px 0;
+    .edu-item{
+      font-size: 12.5px;
+      line-height: 1.7;
+      margin: 0 0 10px;
     }
-    .edu-row span:last-child{ color: var(--muted); }
+    .edu-school{ font-weight: 700; }
+    .edu-degree{ color: var(--muted); }
 
     .skills-list, .awards-list{
       margin: 0 0 0 18px;
       padding: 0;
-      font-size: 12px;
-      line-height: 1.55;
+      font-size: 12.5px;
+      line-height: 1.7;            /* small upgrade */
     }
-    .skills-list li, .awards-list li{ margin: 3px 0; }
+    .skills-list li, .awards-list li{ margin: 5px 0; }
 
+    /* Print */
     @media print{
-      .page{ margin:0; max-width:none; }
+      .actions{ display:none; }
+      .page{ margin:0; max-width:none; padding: 0 18px 0; }
       a{ color:inherit; text-decoration:none; }
     }
 
-    @media (max-width: 720px){
-      .job-head{ flex-direction: column; align-items:flex-start; }
+    /* Mobile */
+    @media (max-width: 780px){
       .grid-3{ grid-template-columns: 1fr; }
     }
   </style>
@@ -149,20 +172,32 @@
   <div class="page">
     <!-- HEADER -->
     <div class="name">Mar Vincent Oraiz</div>
+
     <div class="contact">
       Valenzuela, Philippines &nbsp;|&nbsp;
       <a href="tel:+639913128973">+63 991 312 8973</a> &nbsp;|&nbsp;
       <a href="mailto:gt.kanekikun@gmail.com">gt.kanekikun@gmail.com</a>
+      <br />
+      <a href="https://v2.onlinejobs.ph/jobseekers/info/4607015" target="_blank" rel="noopener">OnlineJobs.ph</a>
+      &nbsp;|&nbsp;
+      <a href="https://www.upwork.com/freelancers/~011fe614b5771e0510" target="_blank" rel="noopener">Upwork</a>
+      &nbsp;|&nbsp;
+      Discord: <span style="color:#111;font-weight:700;">vincrnt1us</span>
     </div>
+
+    <div class="actions">
+      <button class="btn" onclick="window.print()">Download PDF</button>
+    </div>
+
     <div class="rule"></div>
 
     <!-- SUMMARY -->
     <section class="section">
       <h2 class="section-title">Summary</h2>
       <p class="summary">
-        Entry-level E-commerce VA with hands-on experience creating and managing product listings across
-        Amazon, eBay, Poshmark, Etsy, and Shopify. Detail-oriented and reliable, focused on clean product data,
-        strong listing SEO, and smooth order and inventory support.
+        I help e-commerce sellers streamline their stores by handling product listing, SEO, product research,
+        order fulfillment, and data entry across Amazon, eBay, Poshmark, and more. I focus on accuracy,
+        organization, and results—so you can worry less about daily tasks and more about growing your business.
       </p>
     </section>
 
@@ -173,7 +208,6 @@
       <div class="job">
         <div class="job-head">
           <div class="job-title">E-commerce Virtual Assistant • Multi-Platform Listing Support</div>
-          <div class="job-dates">Dates of employment</div>
         </div>
 
         <ul class="bullets">
@@ -193,8 +227,10 @@
       <div class="grid-3">
         <div>
           <h3 class="mini-title">Education</h3>
-          <div class="edu-row"><span>Your degree / track</span><span>Year</span></div>
-          <div class="edu-row"><span>Your school</span><span>Year</span></div>
+          <p class="edu-item">
+            <span class="edu-school">Our Lady of Fatima University</span><br />
+            <span class="edu-degree">BS Information Technology • 2018–2023</span>
+          </p>
         </div>
 
         <div>
